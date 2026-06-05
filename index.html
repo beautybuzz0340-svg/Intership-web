@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Single Line Desktop Navbar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-navbar-wrapper">
+    <header class="layout-header-alibaba">
+        
+        <a href="#" class="brand-logos-colored">
+            <div class="brand-icons">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+            </div>
+            <span class="brand-texts">Brand</span>
+        </a>
+
+        <div class="search-form">
+            <input type="text" class="search-input-field" placeholder="Search">
+            
+            <div class="form-input-group-midle">
+                <span class="category-text">All category</span>
+                <div class="expand-more-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+
+            <button class="button-btn-group">Search</button>
+        </div>
+
+        <nav class="actions-container">
+            <div class="action-item action-profile">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+                <span class="action-text">Profile</span>
+            </div>
+
+            <div class="action-item action-message">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                </svg>
+                <span class="action-text">Message</span>
+            </div>
+
+            <div class="action-item action-orders">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+                <span class="action-text">Orders</span>
+            </div>
+
+            <div class="action-item action-cart">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+                <span class="action-text">My cart</span>
+            </div>
+        </nav>
+
+    </header>
+    </div>
+    
+   <div class="second-navbar-wrapper">
+    <div class="second-navbar-content">
+        
+        <div class="nav-links-list">
+            <a href="#" class="nav-link-item all-category-menu">
+                <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6v2h18V6H3Z" fill="#1C1C1C"/>
+                </svg>
+                <span>All category</span>
+            </a>
+            <a href="#" class="nav-link-item">Hot offers</a>
+            <a href="#" class="nav-link-item">Gift boxes</a>
+            <a href="#" class="nav-link-item">Projects</a>
+            <a href="#" class="nav-link-item">Menu item</a>
+            
+            <div class="dropdown-item">
+                <span class="dropdown-text">Help</span>
+                <svg class="arrow-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41 0.59L6 5.17L10.59 0.59L12 2L6 8L0 2L1.41 0.59Z" fill="#8B96A5"/>
+                </svg>
+            </div>
+        </div>
+      
+        <div class="region-settings">
+            <div class="dropdown-item">
+                <span class="dropdown-text">English, USD</span>
+                <svg class="arrow-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41 0.59L6 5.17L10.59 0.59L12 2L6 8L0 2L1.41 0.59Z" fill="#8B96A5"/>
+                </svg>
+            </div>
+
+            <div class="dropdown-item">
+                <span class="dropdown-text flex-text">
+                    Ship to 
+                    <span class="germany-flag"></span>
+                </span>
+                <svg class="arrow-icon" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41 0.59L6 5.17L10.59 0.59L12 2L6 8L0 2L1.41 0.59Z" fill="#8B96A5"/>
+                </svg>
+            </div>
+        </div>
+        
+    </div>
+</div>
+  <div class="section-main">
+    
+    <div class="categories-menu-sidebar">
+        <a href="#" class="category-menu-item active">Automobiles</a>
+        <a href="#" class="category-menu-item">Clothes and wear</a>
+        <a href="#" class="category-menu-item">Home interiors</a>
+        <a href="#" class="category-menu-item">Computer and tech</a>
+        <a href="#" class="category-menu-item">Tools, equipments</a>
+        <a href="#" class="category-menu-item">Sports and outdoor</a>
+        <a href="#" class="category-menu-item">Animal and pets</a>
+        <a href="#" class="category-menu-item">Machinery tools</a>
+        <a href="#" class="category-menu-item">More category</a>
+    </div>
+
+    <div class="hero-banner-container">
+        <div class="hero-banner-text">
+            <p class="hero-subtitle">Latest trending</p>
+            <h1 class="hero-title">Electronic items</h1>
+            <a href="#" class="hero-btn">Learn more</a>
+        </div>
+    </div>
+
+    <div class="user-board-sidebar">
+        <div class="user-card-top">
+            <div class="user-profile-row">
+                <div class="user-avatar">
+                    <img src="web-pic/profile.jpg" alt="User">
+                    </div>
+                <p class="user-welcome-text">Hi, user<br>let's get stated</p>
+            </div>
+            <div class="user-action-buttons">
+                <a href="#" class="btn-join">Join now</a>
+                <a href="#" class="btn-login">Log in</a>
+            </div>
+        </div>
+
+        <div class="promo-banner banner-orange">
+            <p class="promo-text">Get US $10 off<br>with a new<br>supplier</p>
+        </div>
+
+        <div class="promo-banner banner-cyan">
+            <p class="promo-text">Send quotes with<br>supplier<br>preferences</p>
+        </div>
+    </div>
+
+</div>
+    
+    
+    <div class="deals-main-section">
+    
+    <!-- Left Side Content: Title, Subtitle & Timer Box -->
+    <div class="deals-left-sidebar">
+        <h2 class="deals-main-title">Deals and offers</h2>
+        <p class="deals-sub-title">Hygiene equipments</p>
+        
+        <div class="timer-wrapper">
+            <div class="timer-unit">
+                <span class="timer-val">04</span>
+                <span class="timer-txt">Days</span>
+            </div>
+            <div class="timer-unit">
+                <span class="timer-val">13</span>
+                <span class="timer-txt">Hour</span>
+            </div>
+            <div class="timer-unit">
+                <span class="timer-val">34</span>
+                <span class="timer-txt">Min</span>
+            </div>
+            <div class="timer-unit">
+                <span class="timer-val">56</span>
+                <span class="timer-txt">Sec</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Side Content: Products row seamlessly continuing next to it -->
+    <div class="deals-products-row">
+        
+        <!-- Product Element 1 -->
+        <div class="single-deal-card">
+            <div class="deal-img-box">
+                <img src="web-pic/smartwatch.png" alt="Smart watches">
+            </div>
+            <div class="deal-details">
+                <div class="deal-name">Smart watches</div>
+                <div class="deal-discount-tag">-25%</div>
+            </div>
+        </div>
+
+        <!-- Product Element 2 -->
+        <div class="single-deal-card">
+            <div class="deal-img-box">
+                <img src="web-pic/laptop.png" alt="Laptops">
+            </div>
+            <div class="deal-details">
+                <div class="deal-name">Laptops</div>
+                <div class="deal-discount-tag">-15%</div>
+            </div>
+        </div>
+
+        <!-- Product Element 3 -->
+        <div class="single-deal-card">
+            <div class="deal-img-box">
+                <img src="web-pic/camera.png" alt="GoPro cameras">
+            </div>
+            <div class="deal-details">
+                <div class="deal-name">GoPro cameras</div>
+                <div class="deal-discount-tag">-40%</div>
+            </div>
+        </div>
+
+        <!-- Product Element 4 -->
+        <div class="single-deal-card">
+            <div class="deal-img-box">
+                <img src="web-pic/headphone.png" alt="Headphones">
+            </div>
+            <div class="deal-details">
+                <div class="deal-name">Headphones</div>
+                <div class="deal-discount-tag">-20%</div>
+            </div>
+        </div>
+
+        <!-- Product Element 5 -->
+        <div class="single-deal-card">
+            <div class="deal-img-box">
+                <img src="web-pic/Canoncamera.png" alt="Canon cameras">
+            </div>
+            <div class="deal-details">
+                <div class="deal-name">Canon cameras</div>
+                <div class="deal-discount-tag">-10%</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+    <div class="home-outdoor-section">
+        
+        <div class="banner-left-sidebar">
+            <div class="home-banner-content">
+                <h2 class="home-banner-heading">Home and outdoor</h2>
+                <button class="banner-btn-secondary">Source now</button>
+            </div>
+        </div>
+
+        <div class="products-grid-container">
+            
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Soft chairs</div>
+                    <div class="product-item-price">From USD 19</div>
+                </div>
+                <img class="product-item-img" src="web-pic/soft sofa.png" alt="Soft chairs">
+            </div>
+
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Kitchen mixer</div>
+                    <div class="product-item-price">From USD 100</div>
+                </div>
+                <img class="product-item-img" src="web-pic/mixer.png" alt="Kitchen mixer">
+            </div>
+
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Blenders</div>
+                    <div class="product-item-price">From USD 39</div>
+                </div>
+                <img class="product-item-img" src="web-pic/blender.png" alt="Blenders">
+            </div>
+
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Home lamp</div>
+                    <div class="product-item-price">From USD 19</div>
+                </div>
+                <img class="product-item-img" src="web-pic/lamp.png" alt="Home lamp">
+            </div>
+
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Kitchen dishes</div>
+                    <div class="product-item-price">From USD 10</div>
+                </div>
+                <img class="product-item-img" src="web-pic/kitchen dishes.png" alt="Interior plants">
+            </div>
+
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Home appliance</div>
+                    <div class="product-item-price">From USD 19</div>
+                </div>
+                <img class="product-item-img" src="web-pic/home appliance.png" alt="Super light chair">
+            </div>
+
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Smartwatch</div>
+                    <div class="product-item-price">From USD 29</div>
+                </div>
+                <img class="product-item-img" src="web-pic/smartwatch.png" alt="Wooden clothes">
+            </div>
+
+            <div class="grid-product-item">
+                <div class="product-info-layer">
+                    <div class="product-item-title">Coffee Maker</div>
+                    <div class="product-item-price">From USD 12</div>
+                </div>
+                <img class="product-item-img" src="web-pic/coffee maker.png" alt="Smart utensils">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tech-electronics-section">
+        
+        <div class="tech-banner-sidebar">
+            <div class="tech-banner-content">
+                <h2 class="tech-banner-heading">Consumer electronics</h2>
+                <button class="tech-btn-secondary">Source now</button>
+            </div>
+        </div>
+
+        <div class="tech-products-grid">
+            
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Smartwatches</div>
+                    <div class="tech-item-price">From USD 19</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/smartwatch.png" alt="Smartwatches">
+            </div>
+
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Cameras</div>
+                    <div class="tech-item-price">From USD 89</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/camera.png" alt="Cameras">
+            </div>
+
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Headphones</div>
+                    <div class="tech-item-price">From USD 10</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/headphone.png" alt="Headphones">
+            </div>
+
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Smartphones</div>
+                    <div class="tech-item-price">From USD 19</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/canoncamera.png" alt="Smartphones">
+            </div>
+
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Laptops & PC</div>
+                    <div class="tech-item-price">From USD 340</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/laptop.png" alt="Laptops & PC">
+            </div>
+
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Electric kettle</div>
+                    <div class="tech-item-price">From USD 240</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/electric kettle.png" alt="Electric kettle">
+            </div>
+
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Smartphones</div>
+                    <div class="tech-item-price">From USD 19</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/phone.png" alt="Smartphones">
+            </div>
+
+            <div class="tech-product-item">
+                <div class="tech-info-layer">
+                    <div class="tech-item-title">Electric shaver</div>
+                    <div class="tech-item-price">From USD 35</div>
+                </div>
+                <img class="tech-item-img" src="web-pic/electric shaver.png" alt="Electric shaver">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="supplier-request-section">
+    <!-- Left Side: Blue Banner Text Content -->
+    <div class="banner-content">
+        <h1 class="banner-heading">An easy way to send requests to all suppliers</h1>
+        <p class="banner-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+        </p>
+    </div>
+
+    <!-- Right Side: Form Card Container -->
+    <div class="supplier-quote-card">
+        <h2 class="form-heading">Send quote to suppliers</h2>
+        
+        <form class="quote-form">
+            <!-- Item Input Field -->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="What item you need?">
+            </div>
+            
+            <!-- Details Textarea Field -->
+            <div class="form-group">
+                <textarea class="form-textarea" placeholder="Type more details"></textarea>
+            </div>
+            
+            <!-- Quantity & Unit Row -->
+            <div class="form-row">
+                <div class="form-group qty-group">
+                    <input type="text" class="form-input" placeholder="Quantity">
+                </div>
+                
+                <div class="form-group unit-group">
+                    <div class="select-wrapper">
+                        <select class="form-select">
+                            <option value="pcs">Pcs</option>
+                        </select>
+                        <span class="select-arrow">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 6L11 1" stroke="#8B96A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit">Send inquiry</button>
+        </form>
+    </div>
+</div>
+    <div class="recommended-section">
+    <h2 class="recommended-title">Recommended items</h2>
+    
+    <div class="recommended-grid">
+        
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/shirt.png" alt="T-shirt" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$12.00</div>
+                <p class="card-desc">T-shirts with multiple colors, for men</p>
+            </div>
+        </div>
+
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/coat.png" alt="Winter Jacket" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$16.30</div>
+                <p class="card-desc">Winter jacket for men, brown color</p>
+            </div>
+        </div>
+
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/jacket.png" alt="Blue Coat" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$10.30</div>
+                <p class="card-desc">Blue denim coat with buttons for men</p>
+            </div>
+        </div>
+
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/wallet.png" alt="Blue Wallet" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$22.00</div>
+                <p class="card-desc">Slim leather wallet for men blue color</p>
+            </div>
+        </div>
+
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/jug.png" alt="Jeans Shorts" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$16.30</div>
+                <p class="card-desc">Jeans shorts for men blue color</p>
+            </div>
+        </div>
+
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/camera.png" alt="Canon Camera" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$9.99</div>
+                <p class="card-desc">Canon camera black, 100x zoom</p>
+            </div>
+        </div>
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/pant.png" alt="Canon Camera" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$10.99</div>
+                <p class="card-desc">Canon camera black, 100x zoom</p>
+            </div>
+        </div>
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/school bag.png" alt="Canon Camera" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$21.49</div>
+                <p class="card-desc">Canon camera black, 100x zoom</p>
+            </div>
+        </div>
+
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/headphone.png" alt="Headset" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$10.30</div>
+                <p class="card-desc">Wireless gaming headset gray color</p>
+            </div>
+        </div>
+
+        <div class="recommend-card">
+            <div class="card-img-container">
+                <img src="web-pic/school bag.png" alt="Blue Backpack" class="card-img">
+            </div>
+            <div class="card-info">
+                <div class="card-price">$10.30</div>
+                <p class="card-desc">Blue denim backpack for travel and school</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+    
+    <div class="services-section">
+    <h2 class="services-main-title">Our extra services</h2>
+    
+    <div class="services-grid">
+        
+        <div class="service-card">
+            <div class="service-mask-img">
+                <img src="web-pic/industry.jpg" alt="Source Industry Hubs" class="bg-photo">
+            </div>
+            <div class="service-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/http://www.w3.org/2000/svg">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 21L16.65 16.65" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="service-card-body">
+                <h3 class="service-card-title">Source Industry Hubs</h3>
+                <p class="service-card-desc">Choose your products from source factories directly.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-mask-img">
+                <img src="web-pic/pallette.jpg" alt="Customize Your Products" class="bg-photo">
+            </div>
+            <div class="service-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="service-card-body">
+                <h3 class="service-card-title">Customize Your Products</h3>
+                <p class="service-card-desc">Customize your packaging, logo, and design details.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-mask-img">
+                <img src="web-pic/aeroplane.jpg" alt="Fast, Reliable Shipping" class="bg-photo">
+            </div>
+            <div class="service-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/http://www.w3.org/2000/svg">
+                    <path d="M22 2L11 13" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="service-card-body">
+                <h3 class="service-card-title">Fast, Reliable Shipping</h3>
+                <p class="service-card-desc">Flights and ocean shipping management safely.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-mask-img">
+                <img src="web-pic/inspection.jpg" alt="Product Monitoring" class="bg-photo">
+            </div>
+            <div class="service-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/http://www.w3.org/2000/svg">
+                    <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#127FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="service-card-body">
+                <h3 class="service-card-title">Product Monitoring & Inspection</h3>
+                <p class="service-card-desc">Control product quality with inspection steps.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section class="suppliers-section">
+    <h3 class="suppliers-title">Suppliers by region</h3>
+
+    <div class="suppliers-grid">
+        
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/ae.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">Arabic Emirates</span>
+                <span class="country-domain">shopname.ae</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/au.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">Australia</span>
+                <span class="country-domain">shopname.ae</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/us.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">United States</span>
+                <span class="country-domain">shopname.ae</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/ru.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">Russia</span>
+                <span class="country-domain">shopname.ru</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/it.png" alt="https://flagcdn.com/w40/it.png"></div>
+            <div class="country-info">
+                <span class="country-name">Italy</span>
+                <span class="country-domain">shopname.it</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/dk.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">Denmark</span>
+                <span class="country-domain">denmark.com.dk</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/fr.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">France</span>
+                <span class="country-domain">shopname.com.fr</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/ae.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">Arabic Emirates</span>
+                <span class="country-domain">shopname.ae</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/cn.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">China</span>
+                <span class="country-domain">shopname.ae</span>
+            </div>
+        </div>
+
+        <div class="country-item">
+            <div class="country-flag"><img src="https://flagcdn.com/w40/us.png" alt=""></div>
+            <div class="country-info">
+                <span class="country-name">Great Britain</span>
+                <span class="country-domain">shopname.co.uk</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+    
+    
+    <section class="newsletter-section">
+  <div class="text-container">
+    <h4 class="newsletter-heading">Subscribe on our newsletter</h4>
+    <p class="newsletter-subheading">Get daily news on upcoming offers from many suppliers all over the world</p>
+  </div>
+  <form class="newsletter-form">
+    <div class="input-wrapper">
+      <!-- Aap yahan icon lagana chahein to laga sakti hain -->
+      <input type="email" placeholder="Email" class="email-input" required>
+    </div>
+    <button type="submit" class="subscribe-btn">
+      <span class="btn-text">Subscribe</span>
+    </button>
+  </form>
+</section>
+
+<footer class="layout-footer-alibaba">
+  <div class="footer-main">
+    
+    <div class="group-522">
+      <a href="#" class="brand-logo-colored">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </div>
+        <span class="brand-text">Brand</span>
+      </a>
+      
+      <p class="text-info">Best information about the company gies here but now lorem ipsum is</p>
+      <div class="group-987">
+        <a href="#" class="icon-facebook3">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>
+        </a>
+        <a href="#" class="icon-twitter3">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.6.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg>
+        </a>
+        <a href="#" class="icon-linkedin3">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v-.25h-2.4c.03.677 0 7.225 0 7.225z"/></svg>
+        </a>
+        <a href="#" class="icon-instagram3">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.298c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg>
+        </a>
+        <a href="#" class="icon-youtube3">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.207-.013.19-.01.147c-.05 1.333-.192 2.258-.388 2.62a2.007 2.007 0 0 1-1.415 1.419c-1.117.3-5.273.33-6.11.335h-.092c-.823-.003-4.987-.033-6.11-.335a2.01 2.01 0 0 1-1.415-1.42c-.101-.38-.172-.882-.22-1.401l-.009-.105-.019-.26-.009-.104c-.065-.914-.073-1.77-.074-1.957v-.074c.001-.194.01-1.108.082-2.06l.008-.105.01-.207.013-.19.01-.147c.05-1.333.192-2.259.388-2.62a2.007 2.007 0 0 1 1.415-1.419c1.117-.3 5.273-.33 6.11-.335zM6.5 5.201v5.596L11 8z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-about">
+      <h3 class="title-about">About</h3>
+      <a href="#" class="link-item">About Us</a>
+      <a href="#" class="link-item">Find store</a>
+      <a href="#" class="link-item">Categories</a>
+      <a href="#" class="link-item">Blogs</a>
+    </div>
+
+    <div class="col-partnership">
+      <h3 class="title-partnership">Partnership</h3>
+      <a href="#" class="link-item">About Us</a>
+      <a href="#" class="link-item">Find store</a>
+      <a href="#" class="link-item">Categories</a>
+      <a href="#" class="link-item">Blogs</a>
+    </div>
+
+    <div class="col-information">
+      <h3 class="title-information">Information</h3>
+      <a href="#" class="link-item">Help Center</a>
+      <a href="#" class="link-item">Money Refund</a>
+      <a href="#" class="link-item">Shipping</a>
+      <a href="#" class="link-item">Contact us</a>
+    </div>
+
+    <div class="col-users">
+      <h3 class="title-users">For users</h3>
+      <a href="#" class="link-item">Login</a>
+      <a href="#" class="link-item">Register</a>
+      <a href="#" class="link-item">Settings</a>
+      <a href="#" class="link-item">My Orders</a>
+    </div>
+
+
+
+    <div class="col-getapp">
+  <h3 class="title-getapp">Get app</h3>
+  
+  <a href="#" class="market-button-app-store">
+    <div class="figma-subtract-wrapper">
+      <div class="market-btn-icon">
+        <svg width="15" height="18" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.22 10.36c-.05.77.3 1.54.76 2.08.43.52.98.92 1.63 1.13-.15.42-.36.81-.62 1.17-.37.52-.77.97-1.3 1.34-.48.33-.94.49-1.46.49-.55 0-1.02-.15-1.48-.44-.45-.3-.92-.44-1.48-.44-.54 0-1.03.14-1.48.44-.45.29-.9.44-1.44.44-.52 0-.99-.16-1.48-.49-.52-.37-.92-.82-1.28-1.34a9.7 9.7 0 01-1.3-3.66c-.19-.99-.1-1.93.3-2.77.41-.83.99-1.39 1.76-1.7a3.46 3.46 0 011.66-.27c.56.04 1.05.21 1.48.51.35.25.75.37 1.19.37s.82-.12 1.18-.37c.48-.3 1-.47 1.58-.51.64-.04 1.25.1 1.79.43.6.36 1.05.88 1.31 1.52-1.08.45-1.68 1.25-1.73 2.51zm-1.02-6.55c0 .64-.17 1.24-.51 1.76-.38.56-.9.95-1.52 1.14-.05-.62.1-.19-.48-1.74a3.16 3.16 0 011.51-2.28 3.1 3.1 0 012 .62c.1.16.14.33.14.5z" fill="white"/>
+        </svg>
+      </div>
+      <div class="market-btn-text">
+        <span class="market-txt-small">Download on the</span>
+        <span class="market-txt-main">App Store</span>
+      </div>
+    </div>
+  </a>
+  
+  <a href="#" class="market-button-google-play">
+    <div class="figma-subtract-wrapper">
+      <div class="market-btn-icon">
+        <svg width="15" height="17" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.85 0.32C0.41 0.77 0.15 1.45 0.15 2.32V18.28C0.15 19.15 0.41 19.83 0.85 20.28L1.01 20.4L11.02 10.39V10.21L1.01 0.2L0.85 0.32Z" fill="url(#figma-goog-blue)"/>
+          <path d="M14.35 13.72L11.01 10.39V10.21L14.35 6.88L14.46 6.94L18.42 9.19C19.55 9.83 19.55 10.77 18.42 11.42L14.46 13.66L14.35 13.72Z" fill="url(#figma-goog-yellow)"/>
+          <path d="M11.12 10.3L1.01 0.2C1.49 -0.28 2.27 -0.22 3.19 0.31L14.35 6.64L11.12 10.3Z" fill="url(#figma-goog-red)"/>
+          <path d="M11.12 10.3L14.35 13.96L3.19 20.29C2.27 20.81 1.49 20.88 1.01 20.4L11.12 10.3Z" fill="url(#figma-goog-green)"/>
+          <defs>
+            <linearGradient id="figma-goog-blue" x1="8.36" y1="18.99" x2="-2.42" y2="8.21" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00A0FF"/><stop offset="1" stop-color="#00A1FF"/></linearGradient>
+            <linearGradient id="figma-goog-yellow" x1="19.1" y1="10.3" x2="3.12" y2="10.3" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFE000"/><stop offset="1" stop-color="#FFC400"/></linearGradient>
+            <linearGradient id="figma-goog-red" x1="2.14" y1="-0.21" x2="10.15" y2="7.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FF3A44"/><stop offset="1" stop-color="#CE1A2B"/></linearGradient>
+            <linearGradient id="figma-goog-green" x1="2.14" y1="20.81" x2="10.15" y2="12.8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00E676"/><stop offset="1" stop-color="#00B0FF"/></linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="market-btn-text">
+        <span class="market-txt-small">GET IT ON</span>
+        <span class="market-txt-main">Google Play</span>
+      </div>
+    </div>
+  </a>
+</div>
+  <div class="rectangle-305">
+    <div class="payment-method-language">
+      
+      <span class="text-copyright">© 2023 Ecommerce.</span>
+      
+      <div class="group-986">
+        <svg class="image-flags-icon" viewBox="0 0 7410 3900">
+          <rect width="7410" height="3900" fill="#b22234"/>
+          <path d="M0 300h7410M0 900h7410M0 1500h7410M0 2100h7410M0 2700h7410M0 3300h7410" stroke="#fff" stroke-width="300"/>
+          <rect width="2964" height="2100" fill="#3c3b6e"/>
+          <g fill="#fff">
+            <circle cx="247" cy="175" r="40"/><circle cx="741" cy="175" r="40"/><circle cx="1235" cy="175" r="40"/><circle cx="1729" cy="175" r="40"/><circle cx="2223" cy="175" r="40"/><circle cx="2717" cy="175" r="40"/>
+            <circle cx="494" cy="350" r="40"/><circle cx="988" cy="350" r="40"/><circle cx="1482" cy="350" r="40"/><circle cx="1976" cy="350" r="40"/><circle cx="2470" cy="350" r="40"/>
+            <circle cx="247" cy="525" r="40"/><circle cx="741" cy="525" r="40"/><circle cx="1235" cy="525" r="40"/><circle cx="1729" cy="525" r="40"/><circle cx="2223" cy="525" r="40"/><circle cx="2717" cy="525" r="40"/>
+            <circle cx="494" cy="700" r="40"/><circle cx="988" cy="700" r="40"/><circle cx="1482" cy="700" r="40"/><circle cx="1976" cy="700" r="40"/><circle cx="2470" cy="700" r="40"/>
+            <circle cx="247" cy="875" r="40"/><circle cx="741" cy="875" r="40"/><circle cx="1235" cy="875" r="40"/><circle cx="1729" cy="875" r="40"/><circle cx="2223" cy="875" r="40"/><circle cx="2717" cy="875" r="40"/>
+            <circle cx="494" cy="1050" r="40"/><circle cx="988" cy="1050" r="40"/><circle cx="1482" cy="1050" r="40"/><circle cx="1976" cy="1050" r="40"/><circle cx="2470" cy="1050" r="40"/>
+            <circle cx="247" cy="1225" r="40"/><circle cx="741" cy="1225" r="40"/><circle cx="1235" cy="1225" r="40"/><circle cx="1729" cy="1225" r="40"/><circle cx="2223" cy="1225" r="40"/><circle cx="2717" cy="1225" r="40"/>
+            <circle cx="494" cy="1400" r="40"/><circle cx="988" cy="1400" r="40"/><circle cx="1482" cy="1400" r="40"/><circle cx="1976" cy="1400" r="40"/><circle cx="2470" cy="1400" r="40"/>
+            <circle cx="247" cy="1575" r="40"/><circle cx="741" cy="1575" r="40"/><circle cx="1235" cy="1575" r="40"/><circle cx="1729" cy="1575" r="40"/><circle cx="2223" cy="1575" r="40"/><circle cx="2717" cy="1575" r="40"/>
+          </g>
+        </svg>
+        <span class="text-english">English</span>
+        <span class="icon-control-expand_less">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+    
+
+</body>
+</html>

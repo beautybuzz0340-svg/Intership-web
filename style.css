@@ -1,0 +1,1780 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    background-color: #F7F8FA;
+}
+
+.page-content {
+    flex: 1; 
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.footer {
+    background: #F8F9FA;
+    padding: 40px 30px;
+    border-top: 1px solid #E3E8EE;
+}
+/* ========================================== */
+/* 1. TOP NAVBAR STYLES */
+/* ========================================== */
+        /* 1. Main Header Box (Strict Desktop View) */
+        .layout-header-alibaba {
+            width: 1440px; /* Computer screen ka exact standard size fixed kar diya */
+            height: 86px;
+            background: #FFFFFF;
+            border-bottom: 1px solid #E3E8EE;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; 
+            gap: 48px;
+            padding: 0 30px; /* Standard internal spacing */
+            flex-wrap: nowrap; /* Kisi bhi cheez ko doosri line mein nahi jaane dega */
+        }
+
+        /* 2. Left Side: Brand Logo */
+        .brand-logos-colored {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            width: 150px;
+            height: 46px;
+            margin-left: 98px;
+            flex-shrink: 0; /* Logo ka size fixed rahega, squeeze nahi hoga */
+        }
+
+        .brand-icons {
+            width: 44px;
+            height: 44px;
+            background: #0D6EFD;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            color: #FFFFFF;
+        }
+
+        .brand-texts {
+            font-size: 24px;
+            font-weight: 600;
+            color: #8CB7F5;
+            letter-spacing: -0.5px;
+        }
+
+        /* 3. Center: Search Form Module (Exactly 665px) */
+        .search-form {
+            width: 665px; 
+            height: 40px;
+            border: 1px solid #0D6EFD;
+            border-radius: 8px;
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin: 0 20px;
+            flex-shrink: 0; 
+        }
+
+        .search-input-field {
+            flex: 1;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding: 0 16px;
+            font-size: 16px;
+            color: #1C1C1C;
+        }
+
+        .search-input-field::placeholder {
+            color: #8B96A5;
+        }
+
+        /* Dropdown Box (145px) */
+        .form-input-group-midle {
+            width: 145px;
+            height: 100%;
+            border-left: 1px solid #0D6EFD;
+            padding: 0 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #FFFFFF;
+            flex-shrink: 0;
+        }
+
+        .category-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: #1C1C1C;
+        }
+
+        .expand-more-icon {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1C1C1C;
+        }
+
+        /* Search Blue Button (100px) */
+        .button-btn-group {
+            width: 100px;
+            height: 100%;
+            background: #0D6EFD;
+            border: none;
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* 4. Right Side: Navigation Icons Container (228px) */
+        .actions-container {
+            width: 228px;
+            height: 41px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+
+        .action-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #8B96A5;
+        }
+
+        .action-item svg {
+            width: 22px;
+            height: 22px;
+            margin-bottom: 3px;
+            fill: currentColor;
+        }
+
+        .action-text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 100%;
+            text-align: center;
+        }
+
+        .action-profile { width: 37px; }
+        .action-message { width: 52px; }
+        .action-orders { width: 39px; }
+        .action-cart { width: 44px; }
+    
+/* ========================================== */
+/* 2. BOTTOM NAVBAR STYLES */
+/* ========================================== */
+
+.second-navbar-wrapper {
+    border-bottom: 1px solid #E3E8EE; 
+}
+
+.second-navbar-content {
+    width: 1440px;
+    height: 56px; 
+    padding: 0 30px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 310px;
+    align-items: center;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E3E8EE;
+}
+
+/* Links Left Side List */
+.nav-links-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    white-space: nowrap;
+    max-width: 100%;
+    height: 24px;
+    top: 16px;
+    margin-left: 98px;
+}
+
+.nav-link-item {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1C1C1C;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.all-category-menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Dropdowns Shared Typography */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1C1C1C;
+    cursor: pointer;
+ }
+.arrow-icon {
+    width: 12px;
+    height: 7.41px;
+}
+
+/* Region Settings Right Side Group */
+.region-settings {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: nowrap;
+}
+
+.flex-text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Pure CSS Flag */
+.germany-flag {
+    width: 22px;
+    height: 16px;
+    display: inline-block;
+    background: linear-gradient(to bottom, #000 33.3%, #FF0000 33.3%, #FF0000 66.6%, #FFCC00 66.6%);
+    border-radius: 1px;
+}
+/* ========================================================== */
+/* MAIN SECTION CONTAINER (Left Menu + Banner + Right Panel)  */
+/* ========================================================== */
+
+.section-main {
+    width: 1180px;         
+    height: 400px;       
+    margin: 20px auto;
+    margin-left: 130px;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    padding: 16px;        
+    box-sizing: border-box;
+    gap: 10px;           
+}
+
+/* ========================================================== */
+/* 1. LEFT SIDEBAR: CATEGORIES MENU STYLING                    */
+/* ========================================================== */
+.categories-menu-sidebar {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.category-menu-item {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #505050;       /* Figma gray-600 */
+    text-decoration: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: background 0.2s ease;
+}
+
+.category-menu-item:hover {
+    background-color: #F7F8FA;
+    color: #1C1C1C;
+}
+
+.category-menu-item.active {
+    background-color: #E5F1FF; 
+    color: #1C1C1C;
+    font-weight: 500;          
+}
+
+/* ========================================================== */
+/* 2. CENTER: HERO BANNER STYLING                             */
+/* ========================================================== */
+.hero-banner-container {
+    flex: 1;                  
+    height: 360px;            
+    background-color: #BCD3CD; 
+    background-image: url('web-pic/Banner-board-800x420\ 2.png'); 
+    background-size: cover;
+    background-position: center;
+    padding: 56px 45px;
+    box-sizing: border-box;
+    border: 1px solid #DEE2E7;
+}
+
+.hero-banner-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #1C1C1C;
+    margin: 0 0 8px 0;
+}
+
+.hero-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1C1C1C;
+    margin: 0 0 18px 0;
+    line-height: 39px;
+}
+
+.hero-btn {
+    width: 119px;
+    height: 40px;
+    background: #FFFFFF;
+    color: #1C1C1C;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.08);
+    transition: background 0.2s ease;
+}
+
+.hero-btn:hover {
+    background: #F7F8FA;
+}
+
+/* ========================================================== */
+/* 3. RIGHT SIDEBAR: USER BOARD & PROMO BANNERS STYLING       */
+/* ========================================================== */
+.user-board-sidebar {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;                
+    box-sizing: border-box;
+}
+
+/* Top Blue Profile Card Box */
+.user-card-top {
+    width: 200px;
+    height: 150px;
+    background-color: #E3F0FF; 
+    border-radius: 6px;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.user-profile-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-avatar {
+    width: 50px;
+  height: 50px;
+  background-color: #bcd9ff; 
+  border-radius: 50%; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-welcome-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1C1C1C;
+    margin: 0;
+    line-height: 19px;
+}
+
+/* Auth Buttons Inside Blue Card */
+.user-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.btn-join, .btn-login {
+    width: 180px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: opacity 0.2s ease;
+}
+
+.btn-join {
+    background-color: #0D6EFD; 
+    color: #FFFFFF;
+}
+
+.btn-login {
+    background-color: #FFFFFF;
+    color: #0D6EFD;
+    border: 1px solid #DEE2E7;
+}
+
+.btn-join:hover, .btn-login:hover {
+    opacity: 0.9;
+}
+
+/* Promotional Banners Base */
+.promo-banner {
+    width: 200px;
+    height: 95px;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.banner-orange {
+    background-color: #F38323; 
+}
+
+.banner-cyan {
+    background-color: #55BDC3;  
+}
+
+.promo-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;           
+    line-height: 20px;
+}
+
+.deals-main-section {
+    width: 1180px;
+    height: 240px;
+    margin-left: 130px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex; 
+    align-items: stretch;
+}
+
+/* Left Sidebar Area styling */
+.deals-left-sidebar {
+    width: 285px; 
+    padding: 20px;
+    border-right: 1px solid #DEE2E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.deals-main-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: #1C1C1C;
+    margin: 0 0 4px 0;
+}
+
+.deals-sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8B96A5;
+    margin: 0 0 18px 0;
+}
+
+/* Timer components positioning */
+.timer-wrapper {
+    display: flex;
+    gap: 6px;
+}
+
+.timer-unit {
+    width: 45px;
+    height: 50px;
+    background-color: #606060;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-val {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+.timer-txt {
+    font-size: 12px;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+/* Right side content blocks container layout row */
+.deals-products-row {
+    width: 895px;
+    display: flex; 
+    flex-direction: row;
+}
+
+/* Single Item component layer code inside row */
+.single-deal-card {
+    width: 179px; 
+    height: 100%;
+    background-color: #FFFFFF;
+    border-right: 1px solid #DEE2E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.single-deal-card:last-child {
+    border-right: none; 
+}
+
+.deal-img-box {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.deal-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.deal-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deal-name {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1C1C1C;
+    margin-bottom: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 140px;
+}
+
+.deal-discount-tag {
+    display: inline-block;
+    padding: 3px 13px 4px 13px;
+    background-color: #FFE3E3;
+    border-radius: 29px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #EB001B;
+}
+
+/* ==========================================================================
+   SECTION 1: HOME & OUTDOOR STYLING
+   ========================================================================== */
+ 
+.home-outdoor-section {
+    width: 1180px;
+    height: 257px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    display: flex; 
+    overflow: hidden;
+    margin: 0 auto;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.banner-left-sidebar {
+    width: 280px;
+    height: 100%;
+    background-image: url('web-pic/Group\ 969.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-banner-content {
+    max-width: 160px; 
+}
+
+.home-banner-heading {
+    font-size: 20px;
+    font-weight: 600; 
+    line-height: 26px;
+    color: #1C1C1C;
+    margin: 0 0 18px 0;
+}
+
+.banner-btn-secondary {
+    height: 40px;
+    padding:  10px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1C1C1C;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.08);
+    transition: background-color 0.2s;
+}
+
+.banner-btn-secondary:hover {
+    background-color: #f1f1f1;
+}
+
+.products-grid-container {
+    width: 900px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 225px); 
+    grid-template-rows: repeat(2, 127.5px);   
+}
+
+.grid-product-item {
+    width: 225px;
+    height: 127.5px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DEE2E7;
+    border-right: 1px solid #DEE2E7;
+    position: relative; 
+    padding: 20px 16px;
+}
+
+.products-grid-container .grid-product-item:nth-child(4n) {
+    border-right: none; 
+}
+
+.products-grid-container .grid-product-item:nth-child(n+5) {
+    border-bottom: none; 
+}
+
+.product-info-layer {
+    width: 144px;
+    height: 44px;
+}
+
+.product-item-title {
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 20px;
+    color: #1C1C1C;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-item-price {
+    font-size: 13px;
+    font-weight: 400; 
+    color: #8B96A5; 
+}
+
+.product-item-img {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   SECTION 2: CONSUMER ELECTRONICS STYLING
+   ========================================================================== */
+
+.tech-electronics-section {
+    width: 1180px;
+    height: 257px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    display: flex; 
+    overflow: hidden;
+    margin: 0 130px;
+    margin-top: 30px; 
+}
+
+.tech-banner-sidebar {
+    width: 280px;
+    height: 100%;
+    background-image: url('web-pic/image\ 98.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-banner-content {
+    max-width: 160px; 
+}
+
+.tech-banner-heading {
+    font-size: 20px;
+    font-weight: 600; 
+    line-height: 26px;
+    color: #1C1C1C;
+    margin: 0 0 18px 0;
+}
+
+.tech-btn-secondary {
+    height: 40px;
+    padding: 10px 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E7;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1C1C1C;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.08);
+    transition: background-color 0.2s;
+}
+
+.tech-btn-secondary:hover {
+    background-color: #f1f1f1;
+}
+
+.tech-products-grid {
+    width: 900px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 225px); 
+    grid-template-rows: repeat(2, 127.5px);   
+}
+
+.tech-product-item {
+    width: 225px;
+    height: 127.5px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DEE2E7;
+    border-right: 1px solid #DEE2E7;
+    position: relative; 
+    padding: 20px 16px;
+}
+
+.tech-products-grid .tech-product-item:nth-child(4n) {
+    border-right: none; 
+}
+
+.tech-products-grid .tech-product-item:nth-child(n+5) {
+    border-bottom: none; 
+}
+
+.tech-info-layer {
+    width: 144px;
+    height: 44px;
+}
+
+.tech-item-title {
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 20px;
+    color: #1C1C1C;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tech-item-price {
+    font-size: 13px;
+    font-weight: 400; 
+    color: #8B96A5; 
+}
+
+.tech-item-img {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    object-fit: contain;
+}
+
+/* Main Wrapper Section Styling (Blue Background Banner) */
+.supplier-request-section {
+    width: 1180px;
+    height: 420px;
+    background: linear-gradient(135deg, #2C7CF1 0%, #00D1FF 100%); 
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 30px; 
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+/* Left Side: Banner Content Area */
+.banner-content {
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+/* Main Banner Heading Style */
+.banner-heading {
+    width: 440px;
+    height: 78px;
+    font-weight: 600; 
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    color: #FFFFFF; 
+    margin: 0;
+}
+
+/* Banner Description Paragraph Style */
+.banner-description {
+    width: 390px;
+    height: 48px;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #FFFFFF;
+    opacity: 0.9; 
+    margin: 0;
+}
+
+/* Right Side: Form Card Style (Perfect Matching) */
+.supplier-quote-card {
+    width: 491px;
+    height: 348px;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    padding: 20px 24px 24px 24px;
+    box-shadow: 0px 2px 4px rgba(56, 56, 56, 0.25); 
+    box-sizing: border-box;
+    margin-left: auto; 
+}
+
+/* Form Inner Heading */
+.form-heading {
+    width: 332px;
+    height: 28px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    color: #1C1C1C;
+    margin: 0 0 16px 0;
+}
+
+/* Form Layout Stack */
+.quote-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+/* Input elements configuration */
+.form-input, 
+.form-textarea,
+.form-select {
+    width: 100%;
+    border: 1px solid #DEE2E7; /* gray-300 */
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1C1C1C;
+    box-sizing: border-box;
+    padding: 10px 16px;
+}
+
+.form-input {
+    height: 40px;
+}
+
+.form-textarea {
+    height: 73px;
+    resize: none;
+}
+
+.form-input::placeholder {
+    color: #1C1C1C; 
+}
+
+.form-textarea::placeholder {
+    color: #8B96A5; 
+}
+
+/* Spacing and columns for inputs */
+.form-row {
+    display: flex;
+    gap: 8px;
+}
+
+.qty-group {
+    width: 206px;
+}
+
+.unit-group {
+    width: 111px;
+}
+
+/* Custom Dropdown Styling */
+.select-wrapper {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+.form-select {
+    height: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 36px;
+    cursor: pointer;
+}
+
+.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* Gradient Submit Button */
+.btn-submit {
+    width: 128px;
+    height: 40px;
+    background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%);
+    border: none;
+    border-radius: 6px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.btn-submit:hover {
+    opacity: 0.95;
+}
+
+
+/* Main Section Wrapper */
+.recommended-section {
+    width: 1180px;
+    margin: 40px auto 0 auto;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin-left: 130px;
+}
+/* Section Title Style */
+.recommended-title {
+    font-weight: 600; 
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #1C1C1C;
+    margin: 0 0 20px 0;
+}
+
+/* Grid System Layout (Perfect Spacing Check) */
+.recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 220px); 
+    grid-gap: 20px; 
+}
+
+/* Individual Item Card Setup */
+.recommend-card {
+    width: 220px;
+    height: 310px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E7; 
+    border-radius: 6px;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect on card for premium feel */
+.recommend-card:hover {
+    box-shadow: 0px 4px 10px rgba(56, 56, 56, 0.1);
+}
+
+/* Image Container (200x200 wrapper space) */
+.card-img-container {
+    width: 100%;
+    height: 170px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Product Vector Assets Control */
+.card-img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain; 
+}
+
+/* Information Box (Prices & Text) */
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10px;
+}
+
+/* Price Formatting Typography */
+.card-price {
+    font-weight: 500px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1C1C1C; 
+}
+
+/* Description Text Typography */
+.card-desc {
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #8B96A5; 
+    margin: 0;
+    /* Multiline ellipsis protection */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Google Font Import for Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Section Outer Block Grid Alignment */
+.services-section {
+    width: 1180px;
+    margin: 40px auto 0 auto;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin-left: 130px;
+}
+
+/* Section Main Heading Typography */
+.services-main-title {
+    font-weight: 600; /* Semi Bold */
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #1C1C1C; /* Base Color Dark */
+    margin: 0 0 24px 0; /* Title aur cards row ke darmiyan 24px gap */
+}
+
+/* 4-Columns Horizontal Row Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 280px); /* 4 columns of exactly 280px */
+    grid-gap: 20px; /* Horizontal grid spacing exactly 20px */
+}
+
+/* Individual Standard Service Card Frame */
+.service-card {
+    width: 280px;
+    height: 215px;
+    background-color: #FFFFFF;
+    border: 1px solid #DEE2E7; /* gray-300 standard line edge */
+    border-radius: 6px;
+    position: relative; /* Badge position absolute karne ke liye */
+    overflow: visible; /* Taake overlap icons edge se baahir visible rahein */
+    box-sizing: border-box;
+}
+
+/* Top Block Masked Image Container Box */
+.service-mask-img {
+    width: 278px; /* Inner card edge adjustments */
+    height: 120px;
+    background-color: #1C1C1C; /* Base background shadow filter mask */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background Cover Photo Scaling Layer */
+.service-mask-img .bg-photo {
+    width: 103%; /* Figma specifications scaling logic (303px relative match) */
+    height: auto;
+    object-fit: cover;
+    opacity: 0.50; /* Figma exact opacity blend effect layer 50% */
+}
+
+/* Overlapping Circular Primary Blue Icon Badge Style */
+.service-icon-badge {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 201px; /* Figma horizontal offset coordinate align mapping */
+    top: 92px;  /* 120px bounding box middle cross margin vertical intersection */
+    background-color: #D1E7FF; /* Soft primary sky tone layout base */
+    border: 2px solid #FFFFFF; /* Pure White separation stroke */
+    border-radius: 50%; /* Circle format */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 2px rgba(56, 56, 56, 0.05);
+    z-index: 2;
+}
+
+/* Card Body Content Padding */
+.service-card-body {
+    padding: 16px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Card Title Typography */
+.service-card-title {
+    width: 175px; /* Restrict width so it doesn't collide with icon badge area */
+    font-weight: 500; /* Medium */
+    font-size: 16px;
+    line-height: 22px;
+    color: #1C1C1C;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Card Gray Description Text Typography */
+.service-card-desc {
+    width: 204px; /* Figma standard bounding box text size limit */
+    font-weight: 400; /* Regular */
+    font-size: 14px;
+    line-height: 20px;
+    color: #8B96A5; /* gray-500 tint standard gray */
+    margin: 0;
+}
+
+        .suppliers-section, .suppliers-section * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .suppliers-section {
+            width: 100%;
+            max-width: 1177px;
+            margin: 40px 130px;
+            padding: 0 16px;
+        }
+
+        .suppliers-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: -0.2px;
+            color: #1C1C1C;
+            margin-bottom: 24px;
+        }
+            /* Strict 5-Column Grid Layout */
+        .suppliers-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* Harek row mein strictly 5 columns hi rahein gay */
+            gap: 24px 16px; /* Rows aur columns ke beech ka perfect gap */
+            margin-bottom: 40px;
+        }
+
+        /* Individual Country Item Structure */
+        .country-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 11px;
+            height: 36px;
+            margin-left: 50px;
+        }
+
+        /* Flag Container */
+        .country-flag {
+            width: 28px;
+            height: 20px;
+            margin-top: 2px;
+            flex-shrink: 0;
+            background-color: #f0f4f8; /* Soft placeholder jab tak images real nahi lagate */
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .country-flag img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Text Adjustment */
+        .country-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .country-name {
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: -0.2px;
+            color: #1C1C1C;
+            white-space: nowrap; /* Text ko zabardasti wrap honay se rokta hy */
+        }
+
+        .country-domain {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #8B96A5;
+            margin-top: 2px;
+        }
+
+
+
+/* 1. Main Section Container */
+.newsletter-section {
+  width: 1440px; /* */
+  min-height: 190px; /* */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4; /* Isay aap background ke hisab se change kar sakti hain */
+  box-sizing: border-box;
+    margin-top: 50px;
+}
+
+/* 2. Text Wrapper (Heading + Subheading) */
+.text-container {
+  width: 617px; /* */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Heading aur subheading ka gap */
+  margin-bottom: 21px; /* Form se distance maintain karne ke liye */
+  text-align: center;
+}
+
+/* 3. Main Heading */
+.newsletter-heading {
+  width: 268px; /* */
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* */
+  font-weight: 600; /* */
+  font-size: 20px; /* */
+  line-height: 28px; /* */
+  letter-spacing: -0.2px; /* */
+  color: #1C1C1C; /* */
+}
+
+/* 4. Subheading */
+.newsletter-subheading {
+  width: 617px; /* */
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* */
+  font-weight: 400; /* */
+  font-size: 16px; /* */
+  line-height: 24px; /* */
+  letter-spacing: -0.2px; /* */
+  color: #606060; /* */
+}
+
+/* 5. Form Wrapper */
+.newsletter-form {
+  width: 392px; /* */
+  height: 40px; /* */
+  display: flex;
+  align-items: center;
+}
+
+/* 6. Input Field Wrapper */
+.input-wrapper {
+  width: 274px; /* */
+  height: 40px; /* */
+}
+
+.email-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #E0E0E0; /* Default border color placeholder */
+  border-radius: 6px; 
+  padding: 0 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* 7. Subscribe Button */
+.subscribe-btn {
+  width: 110px; /* */
+  height: 40px; /* */
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #127FFF 0%, #0067FF 100%); /* Gradient Color */
+  padding: 0 16px; /* */margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* 8. Button Text */
+.btn-text {
+  font-family: 'Inter', sans-serif; /* */
+  font-size: 16px; /* */
+  font-weight: 500; /* */
+  line-height: 100%; /* */
+  letter-spacing: 0%; /* */
+  color: #FFFFFF; /* */
+}
+
+/* Layout/footer-alibaba */
+.layout-footer-alibaba {
+  width: 1440px;
+  height: auto;
+  background-color: #FFFFFF;
+  position: relative;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+    padding-bottom: 68px;
+}
+
+/* Main inner container layout */
+.footer-main {
+  display: flex;
+  width: 1180px;  
+  margin-left: 130px;  
+  justify-content: space-between; 
+  padding: 50px;
+}
+
+/* Brand Section (Group 522) */
+.group-522 {
+  width: 276px;
+  height: 157px;
+  margin-left: 0px;
+}
+
+/* 2. Left Side: Brand Logo */
+.brand-logo-colored {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    height: 46px;
+    flex-shrink: 0; /* Logo ka size fixed rahega, squeeze nahi hoga */
+        }
+
+.brand-icon {
+    width: 44px;
+    height: 44px;
+    background: #0D6EFD;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #FFFFFF;
+        }
+
+.brand-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #8CB7F5;
+    letter-spacing: -0.5px;
+        }
+
+.text-info {
+  width: 276px;
+  height: auto;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #505050; /* gray-600 */
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+/* Social Icons Row (Group 987) */
+.group-987 {
+  width: 200px;
+  height: 32px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Icons Design styling to make them circular and visible */
+.group-987 a {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #BDC3C7; /* Placeholder background circle color */
+  color: #FFFFFF;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Columns Base Styling */
+.col-about, .col-partnership, .col-information, .col-users, .col-getapp {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  top: 40px;
+}
+
+/* Column Widths & Positions */
+.col-about {
+    width: 81px;
+    margin-left: 0;
+}
+
+.col-partnership {
+  width: 81px;
+  margin-left: 0;
+}
+
+.col-information {
+  width: 102px;
+  margin-left: 0;
+}
+.col-users {
+  width: 76px;
+  margin-left: 0;
+}
+
+.col-getapp {
+  width: 124px;
+  margin-left: 0;
+}
+
+/* Column Headings Typography */
+.title-about, .title-partnership, .title-information, .title-users, .title-getapp {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1C1C1C; /* gray-900 */
+  margin: 0 0 12px 0;
+}
+
+/* Column Links Typography */
+.link-item {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #8B96A5; /* gray-500 */
+  text-decoration: none;
+  margin-bottom: 4px;
+  white-space: nowrap;  
+}
+
+
+  /* Main Container - Exact Figma Dimensions (124px x 129px) */
+  .col-getapp {
+    display: flex;
+    flex-direction: column;
+    width: 124px;
+    height: 129px;
+    box-sizing: border-box;
+    top: 40px;  
+    left: 1129px;
+  }
+
+  /* Title Text - Exact Figma Typography (61px x 22px, Inter Medium 16px) */
+  .title-getapp {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    color: #1C1C1C;
+    width: 61px;
+    height: 22px;
+    margin: 0 0 12px 0; /* Spacing before buttons */
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Market Buttons - Exact Figma Layout (124px x 42px, Radius 6px) */
+  .market-button-app-store,
+  .market-button-google-play {
+    width: 124px;
+    height: 42px;
+    background-color: #1C1C1C;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Gap between App Store and Google Play */
+  .market-button-app-store {
+    margin-bottom: 11px; 
+  }
+
+  /* Inner Vector Wrapper - Exact Figma Subtract Group Positioning */
+  .figma-subtract-wrapper {
+    position: absolute;
+    top: 8.69px;
+    left: 10.94px;
+    width: 101.9px;
+    height: 25.34px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  /* Icon Fix inside the block */
+  .market-btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+    flex-shrink: 0;
+  }
+
+  /* Typography Container for Button Texts */
+  .market-btn-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Top Small Text styling */
+  .market-txt-small {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+
+  /* Bottom Main Text styling */
+  .market-txt-main {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    line-height: 16px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+
+
+/* Bottom Bar (Rectangle 305) */
+.rectangle-305 {
+  width: 1440px;
+  height: 68px;
+  background-color: #EFF2F4; 
+  border-top: 1px solid #DEE2E7; 
+  left: 0;
+  bottom: 0;
+  position: absolute;    
+  margin-top: 30px;
+}
+
+.payment-method-language {
+  width: 1176px;
+  height: 24px;
+  margin-top: 22px; 
+  margin-left: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Copyright Text Styling */
+.text-copyright {
+  width: 320px;
+  height: 24px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #606060; /* gray-800 */
+}
+
+/* Language Section (Group 986) */
+.group-986 {
+  width: 107px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.image-flags-icon {
+  width: 24px !important;
+  height: 17px !important;
+  display: inline-block;
+}
+
+.text-english {
+  width: 53px;
+  height: 24px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #606060; /* gray-800 */
+  text-align: right;
+  margin-left: 6px;
+  margin-right: 4px;
+}
+
+.icon-control-expand_less {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  color: #606060;
+}
